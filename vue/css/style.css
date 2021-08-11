@@ -1,0 +1,157 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:lightgray;
+    height: 100vh;
+    min-height: 930px;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+}
+
+.degrade{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    text-align: center;
+}
+.degrade h1{
+    color:#be93c5;
+    font-size: 156px;
+}
+.degrade h2{
+    margin-top:200px;
+    color:#7bc6cc;
+    font-size:146px;
+}
+.degrade a{
+    color:aliceblue;
+    font-size:36px;
+}
+
+.card{
+    min-width: 850px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding: 50px 80px 120px;
+
+    box-shadow:
+    0 0 10vw 0vw #be93c5,
+    0 0 2vw 0.4vw #7bc6cc,
+    inset 0 0 .5vw 0.2vw #be93c5,
+    inset 0 0 0.2vw 0.2vw #be93c5,
+    inset 0 0 .25vw 0.2vw #7bc6cc;
+    border-radius: 22px;
+
+    background-color: rgb(63, 63, 63);
+    color:white;
+
+    display: grid;
+    grid-template-columns: 35fr 1fr 1fr;
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form-control{
+    width:60%;
+}
+
+.formBloc h3 {
+    color: rgb(236, 236, 236);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.formBloc .formGroupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+.formBloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: rgb(206, 206, 206);
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+.formBloc .formGroupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid rgb(206, 206, 206);
+    color: rgb(206, 206, 206);
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.formGroupe:nth-child(6) {
+    margin-bottom: 65px;
+    justify-content: center;
+}
+
+.formBloc .formGroupe:focus-within label,
+.formBloc .formGroupe.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+    color: #7bc6cc;
+}
+
+.formBloc .formGroupe:focus-within input,
+.formBloc .formGroupe.animation input {
+    border-bottom-color: #7bc6cc;
+}   
+
+.btn{
+    margin:15px;
+    padding:20px;
+    text-align:center;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color:white;
+    border-radius: 10px;
+    border-color:transparent;
+    background-size:200%;
+    font-size: 16px;
+    margin-bottom:-150px;
+}
+
+.btn-inscription{
+    background-image:linear-gradient(
+        to right,
+        #be93c5,
+        #7bc6cc,
+        #be93c5
+    )
+}
+.btn-inscription:hover{
+    background-position: right;
+}
+
+.btn-connexion{
+    background-image:linear-gradient(
+        to right,
+        #be93c5,
+        #7bc6cc,
+        #be93c5
+    )
+}
+.btn-connexion:hover{
+    background-position: right;
+}
+  
